@@ -1,0 +1,338 @@
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-y:hidden;
+} 
+/* Effects And Animations*/
+#loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2e2d2d;
+    z-index: 9999999999;
+}
+#loading .lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+#options{
+    position: fixed;
+    top:30%;
+    left: 0;
+    z-index: 999999;
+}
+#options #colors-box{
+    background-color: #4e5253;
+    padding: 48px 15px;
+    border-bottom-right-radius: 20px;
+}
+#options #colors-box .color-item{
+    height: 30px;
+    width:30px;
+    margin-left: 5px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#options .icon{
+    background-color: #313436;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+#options .icon:hover i{
+    color:#e65f7e
+}
+.box{
+    position: absolute;
+    bottom: 5%;
+    right: 49%;
+    height: 50px;;
+    width:25px;
+    border: 1px solid #fff;
+    border-radius: 40%;
+    padding-top: 20px;
+}
+.box::after{
+    content: "";
+    border: 2px solid #fff;
+    height: 8px;
+}
+.btn-up-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #e65f7e !important;
+    right: 2%;
+    bottom: 3%;
+}
+.btn-up-icon:hover{
+    cursor: pointer;
+    background-color: #533f44 !important;
+}
+/* /Effects And Animations*/
+/* <Home> */
+.home{
+    background-image: url(../images/header-bg.jpg);
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+.home-leyar{
+    min-height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #e65f7e !important;
+    font-weight: 900;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #e65f7e !important;
+}
+#changBgNav{
+    transition: all 1s;
+}
+
+h1::after{
+    content: "|";
+    animation: typing 15s linear infinite alternate;
+}
+@keyframes typing{
+    
+    0%{ content: "|"; }
+    2%{ content: "D|"; }
+    4%{ content: "De|"; }
+    6%{ content: "Dev|"; }
+    8%{ content: "Deve|"; }
+    10%{ content: "Devel|"; }
+    12%{ content: "Devela|"; }
+    14%{ content: "Develap|"; }
+    16%{ content: "Develape|"; }
+    18%{ content: "Develaper.|"; }
+    20%{ content: "Develape|"; }
+    22%{ content: "Develap|"; }
+    24%{ content: "Devela|"; }
+    26%{ content: "Devel|"; }
+    28%{ content: "Deve|"; }
+    30%{ content: "Dev|"; }
+    32%{ content: "De|"; }
+    34%{ content: "D|"; }
+    36%{ content: "|"; }
+    38%{ content: "P|"; }
+    40%{ content: "PH|"; }
+    42%{ content: "PHO|"; }
+    44%{ content: "PHOT|"; }
+    46%{ content: "PHOTO|"; }
+    48%{ content: "PHOTO G|"; }
+    50%{ content: "PHOTO GR|"; }
+    52%{ content: "PHOTO GRA|"; }
+    54%{ content: "PHOTO GRAP|"; }
+    56%{ content: "PHOTO GRAPH|"; }
+    58%{ content: "PHOTO GRAPHI|"; }
+    60%{ content: "PHOTO GRAPGIC.|";}
+    62%{ content: "PHOTO GRAPGI|"; }
+    64%{ content: "PHOTO GRAPG|"; }
+    66%{ content: "PHOTO GRAP|"; }
+    68%{ content: "PHOTO GRA|"; }
+    70%{ content: "PHOTO GR|"; }
+    72%{ content: "PHOTO G|"; }
+    74%{ content: "PHOTO |"; }
+    78%{ content: "PHOT|"; }
+    84%{ content: "PHO|"; }
+    90%{ content: "PH|"; }
+    100%{ content: "P|"; }
+}
+/* </Home> */
+/* About */
+.about-icon {
+    border: 1px solid rgb(87, 86, 86, 0.3);
+    border-radius: 50%;
+    width: 40px ;
+    height: 40px;
+    transition: all 1s;
+}
+.about-icon:hover {
+    cursor: pointer;
+    background-color: #a7a1a3;
+    color: #fff;
+}
+.about-icon:hover i {
+    transform: scale(1.5);
+    transition: transform 2s;
+}
+/* <About/> */
+/* servieces */
+#servieces
+{
+    background-color: #f5f5f5;
+}
+.servieces-icon{
+    color: #e65f7e !important;
+    font-size: 35px;
+}
+.line{
+    width: 50px;
+    height: 3px;
+    background-color: #e65f7e !important;
+}
+.servieces-item {
+    transition: width 20s;
+}
+.servieces-item:hover .line{
+    width: 80px;
+    transition: width 1s;
+}
+/* /servieces */
+/* Portfolio*/
+/* /Portfolio*/
+/* Client */
+#client{
+    background-color: #e9e6e6;
+}
+.carousel-indicators .arrow{
+    background-color: #ddb1bb;
+    height: 10px !important;
+    width: 15px  !important;
+}
+.carousel-indicators .active {
+    background-color:  #e65f7e; 
+    width: 30px !important;
+}
+/* /Client*/
+/*Work*/
+.nav-pills .nav-link{
+    color: #000;
+}
+.nav-pills .nav-link.active{
+    background-color: #e65f7e !important;
+}
+.work-item{
+    overflow: hidden;
+}
+.work-item:hover .effect{
+    top : 0%;  
+}
+.effect{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top : 100%;
+    transition: all 1s;
+}
+/*/Work*/
+/* Blog*/
+#blog{
+    background-color: #f5f5f5;
+}
+.card{
+    width: 18rem;
+}
+/* /Blog*/
+/* Footer */
+footer .footer-icon i {
+    color: #8b8888;
+}
+.footer-icon{
+    border-radius: 50%;
+    width: 40px ;
+    height: 40px;
+    background-color: #313436;
+    transition: all 2s; 
+}
+.footer-icon:hover{
+    color: #fff;
+    background-color: #515153;
+}
+.footer-icon:hover i{
+    color: #fff;
+}
+.footer-icon:hover i{
+    transform: scale(1.5);
+    transition: transform 2s;
+}
+footer a{
+    text-decoration: none;
+}
+
+/* /footer*/
+
